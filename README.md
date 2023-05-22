@@ -9,6 +9,12 @@
 
 - Description: Auto install latest kernel for TCP BBR
 - Intro: https://teddysun.com/489.html
+- 使用root用户登录，运行以下命令：
+
+wget --no-check-certificate -O /opt/bbr.sh https://github.com/teddysun/across/raw/master/bbr.sh
+chmod 755 /opt/bbr.sh
+/opt/bbr.sh
+安装完成后，脚本会提示需要重启 VPS，输入 y 并回车后重启。
 
 ## kms.sh
 
@@ -20,6 +26,21 @@
 
 - Description: Auto test I/O & upload & download speed script
 - Intro: https://teddysun.com/444.html
+- 使用方法：
+命令1：
+
+wget -qO- bench.sh | bash
+或者
+
+curl -Lso- bench.sh | bash
+命令2：
+
+wget -qO- 86.re/bench.sh | bash
+或者
+
+curl -so- 86.re/bench.sh | bash
+备注：
+bench.sh 既是脚本名，同时又是域名。所以不要怀疑我写错了或者你看错了。
 
 ## backup.sh
 
